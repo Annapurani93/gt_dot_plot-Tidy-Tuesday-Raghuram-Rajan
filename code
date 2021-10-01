@@ -41,12 +41,6 @@ paper2%>%
   gt_color_box(columns = `ASSET PRICING`, domain = 0:5,  palette = c("#ff8c8c","#f0edaa", "#d1dd93"))%>%
   gt_color_box(columns = `ECONOMIC GROWTH`, domain = 0:5,  palette = c("#ff8c8c","#f0edaa", "#d1dd93"))%>%
   gt_color_box(columns = `INTERNATIONAL FINANCE`, domain = 0:5,  palette = c("#ff8c8c","#f0edaa", "#d1dd93"))%>%
-  data_color(
-    columns = c(TOTAL),
-    colors = scales::col_numeric(
-      c("#051e3e"), 
-      domain = range(TOTAL))
-  )%>%
   tab_options(
   table.background.color = "#051e3e")%>%
   tab_header(
